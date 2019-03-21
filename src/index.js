@@ -5,8 +5,10 @@ import ReactDOM from "react-dom";
 // import Customer from "./component/context/customer";
 import context from "./component/context";
 import Modal from "./component/protal/index";
+import Import from "./component/import";
 
 import "./styles.css";
+import history from "./component/history";
 
 function Hello(props) {
   return <div> 这是一个对props中更新obj的测试 </div>;
@@ -42,6 +44,14 @@ class App extends React.Component {
             <p>这是一个MODAL 的内部</p>
           </Modal>
         )}
+        <br />
+        <button
+          onClick={() => {
+            history.push({ pathname: "/ges" });
+          }}
+        >
+          go
+        </button>
       </div>
     );
   }
