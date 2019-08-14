@@ -1,10 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import ReactConfig from "./router";
 
 // import InputDefaultValue from "./component/inputDefaultValue/index";
 // import Customer from "./component/context/customer";
 import context from "./component/context";
 import Modal from "./component/protal/index";
+import Update from "./component/update";
 import Import from "./component/import";
 
 import "./styles.css";
@@ -23,18 +25,25 @@ const nameObj = {
 const { Tooltip } = context;
 
 class App extends React.Component {
-  state = { qq: nameObj, value: "12", visible: false };
+  state = { qq: nameObj, value: "12", visible: false, qqq: null };
   handleShowModal = () => {
     const { visible } = this.state;
     this.setState({
       visible: !visible
     });
   };
+  componentDidMount() {
+    console.log(this.state.qqq);
+  }
+  componentDidUpdate() {
+    console.log(this.state.qqq);
+  }
+
   render() {
-    const { qq, value, visible } = this.state;
+    const { qq, value, visible, qqq } = this.state;
     return (
       <div className="App" onClick={this.handleOnclick}>
-        <h2>APP - TEST</h2>
+        <h2 ref={qqq}>APP - TEST</h2>
         <Tooltip />
         <br />
         <button onClick={this.handleShowModal}>show Modal</button>
@@ -52,10 +61,12 @@ class App extends React.Component {
         >
           go
         </button>
+        <br />
+        <Update />
       </div>
     );
   }
 }
 
 const rootElement = document.getElementById("root");
-ReactDOM.render(<App />, rootElement);
+ReactDOM.render(<ReactConfig />, rootElement);
