@@ -1,12 +1,14 @@
 {
-  "name": "new",
+  "name": "react-test",
   "version": "1.0.0",
-  "description": "",
+  "description": "this is a react  test，just for study；",
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {
-    "react": "16.8.3",
-    "react-dom": "16.8.3",
+    "history": "4.9.0",
+    "react": "16.8.6",
+    "react-dom": "16.8.4",
+    "react-router-dom": "5.0.1",
     "react-scripts": "2.0.3"
   },
   "devDependencies": {},

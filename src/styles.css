@@ -2,3 +2,10 @@
   font-family: sans-serif;
   text-align: center;
 }
+.nav {
+  font-size: 14px;
+}
+.nav .item {
+  line-height: 32px;
+  padding: 4px;
+}
