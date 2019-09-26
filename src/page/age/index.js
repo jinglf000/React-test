@@ -4,10 +4,10 @@ import SuperInput from "../../component/superInput";
 export default class Inner extends React.Component {
   componentDidMount() {}
   componentDidUpdate() {
-    console.log("update");
+    console.log('update');
   }
   componentWillUnmount() {
-    console.log("will UNMount age");
+    console.log('will UNMount age');
   }
   render() {
     return (
@@ -21,7 +21,6 @@ export default class Inner extends React.Component {
 
 export function Age(props) {
   const [num, setNum] = useState(0);
-  const [val, setVal] = useState("221");
 
   return (
     <div>

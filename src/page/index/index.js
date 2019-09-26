@@ -1,13 +1,12 @@
-import React, { forwardRef, Component, useRef } from "react";
-import { render } from "react-dom";
+import React, { Component, useRef } from 'react';
 
 const FuncyButton = props => {
-  const obj = useRef("12");
+  const obj = useRef('12');
   console.log(obj);
   return <button ref={obj}>{props.children}</button>;
 };
 
-class FButton extends Component {
+export class FButton extends Component {
   componentDidMount() {
     // console.log(this.$ss);
   }
