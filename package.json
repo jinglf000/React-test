@@ -6,10 +6,15 @@
   "main": "src/index.js",
   "dependencies": {
     "history": "^4.9.0",
-    "react": "^16.9.0",
-    "react-dom": "^16.9.0",
     "react-router-dom": "5.0.1",
-    "react-scripts": "2.0.3"
+    "react-scripts": "2.0.3",
+    "react": "link:../react/packages/react/",
+    "react-dom": "link:../react/packages/react-dom/",
+    "shared": "link:../react/packages/shared/",
+    "events": "link:../react/packages/events/",
+    "react-reconciler": "link:../react/packages/react-reconciler/",
+    "react-scheduler": "link:../react/packages/react-scheduler/",
+    "react-is": "link:../react/packages/react-is/"
   },
   "devDependencies": {},
   "scripts": {
