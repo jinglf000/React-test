@@ -25,6 +25,7 @@ export default class Index extends Component {
     return (
       <div>
         <FuncyButton xxx={e => (this.$ref = e)}>谢谢</FuncyButton>
+        <div>{this.props.children}</div>
       </div>
     );
   }
