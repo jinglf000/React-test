@@ -18,6 +18,7 @@ export default class Layout extends Component {
           <Link to="/age?name=12"> age nam = 12</Link>
           <Link to="/go/TOM"> go 汤姆</Link>
           <Link to="/go/JEM"> go JEM</Link>
+          <Link to="/source"> 源码 </Link>
         </nav>
 
         <div>{childern}</div>

@@ -68,5 +68,8 @@ class App extends React.Component {
   }
 }
 
+const test = <App>TEST</App>;
+console.log(test);
+
 const rootElement = document.getElementById("root");
 ReactDOM.render(<ReactConfig />, rootElement);

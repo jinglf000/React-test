@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, PureComponent } from "react";
 import SuperInput from "../../component/superInput";
 
 export default class Inner extends React.Component {
@@ -13,6 +13,7 @@ export default class Inner extends React.Component {
     return (
       <div>
         <Age />
+        <Go />
       </div>
     );
   }
@@ -32,8 +33,25 @@ export function Age(props) {
       >
         age
       </button>
+      <button
+        onClick={() => {
+          console.log(123);
+          ming.go();
+        }}
+      >
+        catch
+      </button>
       <hr />
       <SuperInput onChange={e => console.log(e.target.value)} />
     </div>
   );
+}
+
+class Go extends PureComponent {
+  componentDidMount() {
+    console.log(this);
+  }
+  render() {
+    return <div> GO PureComponent </div>;
+  }
 }
