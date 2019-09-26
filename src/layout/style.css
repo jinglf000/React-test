@@ -1,0 +1,13 @@
+.wraps {
+  background: #f6f6f6;
+}
+.nav {
+  font-size: 14px;
+}
+.nav a {
+  padding: 4px 12px;
+  color: #666;
+}
+.nav a:hover {
+  color: blue;
+}

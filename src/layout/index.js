@@ -1,12 +1,11 @@
-import React, { Component } from "react";
-import { Link } from "react-router-dom";
-
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+import './style.css';
 export default class Layout extends Component {
   render() {
-    const { childern, location } = this.props;
-    console.log(location);
+    const { childern } = this.props;
     return (
-      <div>
+      <div className="wraps">
         <nav className="nav">
           <Link to="/" className="item">
             Index
@@ -17,7 +16,8 @@ export default class Layout extends Component {
           </Link>
           <Link to="/age?name=12"> age nam = 12</Link>
           <Link to="/go/TOM"> go 汤姆</Link>
-          <Link to="/go/JEM"> go JEM</Link>
+          <Link to="/hook">Hook</Link>
+          <Link to="/interface">Interface</Link>
         </nav>
 
         <div>{childern}</div>

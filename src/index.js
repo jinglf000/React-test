@@ -66,4 +66,6 @@ export class App extends React.Component {
 }
 
 const rootElement = document.getElementById('root');
-ReactDOM.render(<ReactConfig />, rootElement);
+const SmallElement = () => <div> SMALL ELEMENT </div>;
+
+ReactDOM.render(<div>ELEMENT</div>, rootElement);
